@@ -7,64 +7,84 @@ elemento (en html llamado "etiqueta")
 *{
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
 }
 
 /* Inicio de Pagina de Historia
-*/
 
-header
-{
-   background-color: rgba(200, 166, 166, 0.849);
-   position: fixed;
-   top: 0;
-   z-index: 1;
-   width: 100%;
-   display: flex;
-   flex-direction: column;
    @media (min-width: 768px){
       flex-direction: row;
       justify-content: space-around;
       height: 70px;
    }
+
+*/
+ul,ol
+{
+ list-style: none;
 }
 
-header nav 
+header a
+{
+text-decoration: none;
+color: black;
+}
+
+.seccion-historia a, .seccion-galeria a, .primer-seccion-eventos a, .segunda-seccion-eventos a
+{
+   text-decoration: none;
+   padding: 10px;
+   color: rgb(109, 60, 60); 
+   border: 3px solid red;
+   width: fit-content;
+   height: fit-content;
+   border-radius: 20px;
+}
+
+header
+{
+   background-color: rgba(50, 48, 48, 0.688);
+   position: fixed;
+   top: 0;
+   z-index: 1;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header nav ul
 {
    display: flex;
-    align-items: center;
-    margin: 50px;
+   justify-content:center;
+   align-items: center;
+   gap: 20px;
 }
+
 
 header li
 {
-   list-style-type: none;
    text-decoration-line: overline;
    text-align: center;
-   display: inline-block;
+   margin-bottom: 1px;
 }
 
 main 
 {
-   margin-top: 90px;
+   margin-top: 120px;
 }
 
 body
 {
-   background-color: rgb(114, 117, 118);
+   background-color: rgb(255, 255, 255);
 }
 
 h1 
 {
    background-color: rgba(194, 180, 160, 0.822);
    text-align:left;
-   width: 150px;
-   right: 150px;
-   padding-top: 0px;
-   padding-right: 10px;
-   padding-bottom: 1px;
-   padding-left: 55px;
-   margin: 1px;
-   
+   width: 100px;
+   right: 100px;
 }
 
 h2
@@ -72,7 +92,8 @@ h2
    background-color: rgba(43, 35, 35, 0.514);
    text-align: center;
    padding: 5px;
-   margin: 10px 250px;
+   margin-top: 20px;
+   margin-bottom: 10px;
 }
 
 h3
@@ -80,22 +101,53 @@ h3
    background-color: rgb(62, 62, 62);
    font-weight: bolder; color: rgb(255, 255, 255);
    text-decoration: underline;
-   width: 300px;
+   width: fit-content;
+   height: fit-content;
    right: 200px;
    padding-top: 1px;
    padding-right: 1px;
    padding-bottom: 1px;
    padding-left: 50px;
-
 }
 
 img
 {
    display: flex;
    flex-direction: column;
-   width: 400px;
-   margin-left: 550px;
-   margin-top: 10px;
+   min-width: 400px;
+   margin: 15px;
+   border:solid 2px rgb(208, 184, 184);
+}
+
+.imagenes-galeria
+{
+   display: flex;
+   min-width: 400px;
+   margin: 15px;
+}
+
+.seccion-historia
+{
+ display: flex;
+ justify-content: space-around;
+}
+
+.seccion-galeria
+{
+   display: flex;
+   justify-content: center;
+}
+
+.primer-seccion-eventos
+{
+   display: flex;
+   justify-content: center;
+}
+
+.segunda-seccion-eventos
+{
+   display: flex;
+   justify-content: center;
 }
 
 article
@@ -109,13 +161,32 @@ article
 
 footer
 {
+   color: rgba(63, 63, 63, 0.425);
    font-weight: initial;
    text-decoration-line: overline;
    text-align: center;
-   display: flex;
-   
 }
 
+footer div{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 80px;
+   margin-bottom: 10px;
+}
+
+form
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 80px;
+   margin-bottom: 10px;
+}
+
+form div
+{
+   margin: 20px;
+}
 
 /* Fin de Pagina de Historia
 */
