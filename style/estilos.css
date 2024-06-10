@@ -113,8 +113,11 @@ h3
 img
 {
    display: flex;
-   flex-direction: column;
-   min-width: 400px;
+   justify-content:center;
+   min-width: 100px;
+   min-height: 100px;
+   max-width: 400px;
+   max-height: 400px;
    margin: 15px;
    border:solid 2px rgb(208, 184, 184);
 }
@@ -122,8 +125,7 @@ img
 .imagenes-galeria
 {
    display: flex;
-   min-width: 400px;
-   margin: 15px;
+   justify-content: center;
 }
 
 .seccion-historia
