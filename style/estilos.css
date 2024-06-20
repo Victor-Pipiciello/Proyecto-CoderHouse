@@ -1,197 +1,47 @@
-/* 
-elemento (en html llamado "etiqueta")
- {
-    propiedad: valor
- }
-*/
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-ul,ol
-{
- list-style: none;
+ul, ol {
+  list-style: none;
 }
 
-header a
-{
-text-decoration: none;
-color: black;
+a {
+  text-decoration: none;
 }
 
-.seccion-historia a, .seccion-galeria a, .primer-seccion-eventos a, .segunda-seccion-eventos a
-{
-   text-decoration: none;
-   padding: 10px;
-   color: rgb(109, 60, 60); 
-   border: 3px solid red;
-   width: fit-content;
-   height: fit-content;
-   border-radius: 20px;
+.eventos {
+  background-color: gray;
+}
+.eventos-titulo-principal {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px 0px;
+}
+@media (min-width: 768px) {
+  .eventos-titulo-principal {
+    padding: 80px 0px;
+  }
+}
+.eventos-contenedor {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+@media (min-width: 768px) {
+  .eventos-contenedor {
+    flex-direction: row;
+    margin: 0px 100px;
+  }
+}
+.eventos-img {
+  width: 80%;
+  margin: 50px auto;
+}
+.eventos-img img {
+  width: 100%;
 }
 
-header
-{
-   background-color: rgba(50, 48, 48, 0.688);
-   position: fixed;
-   top: 0;
-   z-index: 1;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-header nav ul
-{
-   display: flex;
-   justify-content:center;
-   align-items: center;
-   gap: 20px;
-}
-
-
-header li
-{
-   text-decoration-line: overline;
-   text-align: center;
-   margin-bottom: 1px;
-}
-
-main 
-{
-   margin-top: 120px;
-}
-
-body
-{
-   background-color: rgb(255, 255, 255);
-}
-
-h1 
-{
-   background-color: rgba(194, 180, 160, 0.822);
-   text-align:left;
-   width: 100px;
-   right: 100px;
-}
-
-h2
-{
-   background-color: rgba(43, 35, 35, 0.514);
-   text-align: center;
-   padding: 5px;
-   margin-top: 20px;
-   margin-bottom: 10px;
-}
-
-h3
-{
-   background-color: rgb(62, 62, 62);
-   font-weight: bolder; color: rgb(255, 255, 255);
-   text-decoration: underline;
-   width: fit-content;
-   height: fit-content;
-   right: 200px;
-   padding-top: 1px;
-   padding-right: 1px;
-   padding-bottom: 1px;
-   padding-left: 50px;
-}
-
-img
-{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-width: 50px;
-   min-height: 50px;
-   max-width: 100%;
-   max-height: 100%;
-   border: solid 2px rgb(208, 184, 184);
-}
-
-.imagenes-galeria
-{
-   display: grid;
-   grid-template-columns: auto auto;
-   grid-template-rows: auto auto;
-   justify-content: center;
-}
-
-.seccion-historia
-{
- display: flex;
- justify-content: space-around;
-}
-
-.seccion-galeria
-{
-   display: flex;
-   justify-content: center;
-}
-
-.primer-seccion-eventos
-{
-   display: flex;
-   justify-content: center;
-}
-
-.segunda-seccion-eventos
-{
-   display: flex;
-   justify-content: center;
-}
-
-article
-{
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-size: medium;
-   font-style: italic;
-   font-weight: lighter;
-   text-align: justify;
-}
-
-footer
-{
-   color: rgba(63, 63, 63, 0.425);
-   font-weight: initial;
-   text-decoration-line: overline;
-   text-align: center;
-}
-
-footer div{
-   display: flex;
-   justify-content: space-around;
-   margin-top: 80px;
-   margin-bottom: 10px;
-}
-
-form
-{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 80px;
-   margin-bottom: 10px;
-}
-
-form div
-{
-   margin: 20px;
-}
-
-
-@media (max-width:480px)
-{
-   .imagenes-galeria
-   {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-   }
-}
+/*# sourceMappingURL=estilos.css.map */
