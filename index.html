@@ -9,113 +9,103 @@
 
  <body> <!-- Cuerpo del proyecto -->
    
-     <header>
-          <h1>Pagani</h1>
-
-          <nav>
-              <ul>
-                <li><a href="./pages/historia.html">Historia</a></li>
-                <li><a href="./pages/galeria.html">Galeria</a></li>
-                <li><a href="./pages/eventos.html">Eventos</a></li>
-                <li><a href="./pages/ingreso.html">Ingresar</a></li>
-              </ul>
-          </nav>
-     </header>
-
-     <main>
-        <section>
-            <img src="./imagenes/imagen-potada.png" alt="Imagen de portada de un auto pagani">
-            <h2>Pagani</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+   <header class="encabezado">
+      <a class="encabezado-botonLogo" href="../index.html">
+         <img class="encabezado-logo" src="../imagenes/Logo minimalista PNG.png" alt="Imagen del logo pagani">
+      </a>
+      <nav class="encabezado-nav">
+         <ul class="encabezado-botonera">
+            <li class="encabezado-botones"><a class="encabezado-boton" href="./pages/historia.html">Historia</a></li>
+            <li class="encabezado-botones"><a class="encabezado-boton" href="./pages/galeria.html">Galeria</a></li>
+            <li class="encabezado-botones"><a class="encabezado-boton" href="./pages/eventos.html">Eventos</a></li>
+            <li class="encabezado-botones"><a class="encabezado-boton" href="./pages/ingreso.html">Ingresar</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <main>
+      <section class="portada">
+         <img class= "imagendeportada" src="./imagenes/imagen-potada.png" alt="Imagen de portada de un auto pagani">
+         <div class="portada-titular">
+            <img class="portada-logoGrande" src="./imagenes/Logo PNG.png" alt="Imagen del logo grande">
+            <h1>Pagani</h1>
+            <p>Arte y Ciencia, de la mano para crear una obra maestra.</p>
+           </div>
             
 
 
         </section>
 
-        <section>
-            <h2>Historia</h2>
-            <h3>Pagani atravez de los años...</h3>
-            <div class="seccion-historia">
+        <section class="historia">
+            <h2 class="historia-titulo">Historia</h2>
+            <h3 class="historia-subtitulo">Pagani atravez de los años...</h3>
+            <div class="historia-seccion">
              <img src="./imagenes/imagen-historia.png" alt="Imagen de los primeros autos de la historia pagani">
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum facilis nam.
-             </article>
-             <a href="./pages/historia.html">
-                Ver más
-             </a>
+            <div class="historia-articulo">
+               <p class="historia-info">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum facilis nam.
+               </p>
+               <a class="botonvermas" href="./pages/historia.html">
+                  Ver más
+               </a>
+            </div>
             </div>
         </section>
 
-        <section>
-            <h2>Galeria</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <div class="seccion-galeria">
-             <a href="./pages/galeria.html">
+        <section class="galeria">
+           <h2>Galeria</h2>
+           <div class="galeria-titular">
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+               <a class="botonvermas" href="./pages/galeria.html">
                 Ver más
-             </a>
-            
-             <img src="./imagenes/imagen1.png" alt="Imagen 1 de la Galeria">
-             <img src="./imagenes/imagen2.png" alt="Imagen 2 de la Galeria">
-             <img src="./imagenes/imagen3.png" alt="Imagen 3 de la Galeria">
+               </a>
+            </div>
+
+            <div class="galeria-seccion">
+               <img src="./imagenes/imagen1.png" alt="Imagen 1 de la Galeria">
+               <img src="./imagenes/imagen2.png" alt="Imagen 2 de la Galeria">
+               <img src="./imagenes/imagen3.png" alt="Imagen 3 de la Galeria">
             </div>
         </section>
 
-        <section>
-            <h2>Eventos</h2>
-            <div class="primer-seccion-eventos">
-             <img src="./imagenes/roma.png" alt="Imagen del evento en Roma">
-             <h3>Roma, y sus bellos paisajes</h3>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Eum facilis nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum facilis nam.
-             </article>
-             <a href="./pages/eventos.html">
-                Ver más
-             </a>
+        <section class="eventos">
+         <h2 class="eventos-titulo-principal">Eventos</h2>
+         <div class="eventos-contenedor">
+            <div class="eventos-contenido">
+               <div class="eventos-img">
+                  <img src="./imagenes/modena.png" alt="Imagen del evento en Módena">
+               </div>
+               <h3 class="eventos-titulo-secundario">Titulo evento</h3>
+               <p class="eventos-parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+               <a class="botonvermas" href="./pages/eventos.html">
+                  Ver más
+               </a>
             </div>
             
-            <div class="segunda-seccion-eventos">
-             <img src="./imagenes/modena.png" alt="Imagen del evento en Módena">
-             <h3>Módena, una ciudad llena de arte</h3>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Eum facilis nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum facilis nam.
-             </article>
-             <a href="./pages/eventos.html">
-                Ver más
-             </a>
+            <div class="eventos-contenido">
+               <div class="eventos-img">
+                  <img src="./imagenes/modena.png" alt="Imagen del evento en Módena">
+               </div>
+               <h3 class="eventos-titulo-secundario">Titulo evento</h3>
+               <p class="eventos-parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+               <a class="botonvermas" href="./pages/eventos.html">
+                  Ver más
+               </a>
             </div>
+         </div>
         </section>
+
 
      </main>
 
-     <footer>
-        <div>
-          <p>Novedades</p>
-          <p>Ayuda</p>
-          <p>Nosotros</p>
-          <p>Pagani Desing</p>
+     <footer class="piePagina">
+        <div class="piePagina-botonera">
+          <p class="piePagina-boton">Novedades</p>
+          <p class="piePagina-boton">Ayuda</p>
+          <p class="piePagina-boton">Nosotros</p>
+          <p class="piePagina-boton">Pagani Desing</p>
         </div>
      </footer>
-
-     <section class="eventos">
-      <h2 class="eventos-titulo-principal">Evento Adri</h2>
-      <div class="eventos-contenedor">
-         <div class="eventos-contenido">
-            <div class="eventos-img">
-               <img src="./imagenes/modena.png" alt="Imagen del evento en Módena">
-            </div>
-            <h3 class="eventos-titulo-secundario">Titulo evento</h3>
-            <p class="eventos-parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt repellat odit voluptatibus expedita cupiditate numquam voluptas molestias iure, eius voluptatum nihil? Quaerat tenetur rerum alias corrupti fugit tempora nulla adipisci.</p>
-         </div>
-         
-         <div class="eventos-contenido">
-            <div class="eventos-img">
-               <img src="./imagenes/modena.png" alt="Imagen del evento en Módena">
-            </div>
-            <h3 class="eventos-titulo-secundario">Titulo evento</h3>
-            <p class="eventos-parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt repellat odit voluptatibus expedita cupiditate numquam voluptas molestias iure, eius voluptatum nihil? Quaerat tenetur rerum alias corrupti fugit tempora nulla adipisci.</p>
-         </div>
-      </div>
-     </section>
 
 
     </body> <!-- Cerramos el cuerpo del proyecto, con todas las etiquetas dentro -->

@@ -75,7 +75,7 @@ body
 h1 
 {
    background-color: rgba(194, 180, 160, 0.822);
-   text-align:left;
+   text-align:center;
    width: 100px;
    right: 100px;
 }
@@ -135,17 +135,6 @@ img
    justify-content: center;
 }
 
-.primer-seccion-eventos
-{
-   display: flex;
-   justify-content: center;
-}
-
-.segunda-seccion-eventos
-{
-   display: flex;
-   justify-content: center;
-}
 
 article
 {
